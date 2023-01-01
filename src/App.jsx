@@ -12,7 +12,7 @@ function App() {
     // console.log(messageData)
     // setMessage({text: message, isUser:true})
     // messages.push({text: message, isUser:true})
-    fetch('http://localhost:3000/',{
+    fetch('http://localhost:3500/',{
       method:'POST',
       headers: {
         'Content-Type':'application/json',
@@ -27,7 +27,6 @@ function App() {
   }
   return (
     <div className="App">
-      <h2> Ask SU </h2>
       <ChatUI response={response} sendMessage={sendMessage}></ChatUI>
     </div>
   )
